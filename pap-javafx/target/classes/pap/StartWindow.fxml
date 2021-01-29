@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartWindowController">
+   <children>
+      <Button layoutX="490.0" layoutY="70.0" mnemonicParsing="false" onAction="#logIn" prefHeight="25.0" prefWidth="158.0" text="Zaloguj się" />
+      <Button layoutX="490.0" layoutY="169.0" mnemonicParsing="false" onAction="#storage" prefWidth="158.0" text="Zarządzaj magazynem" />
+      <Button layoutX="490.0" layoutY="241.0" mnemonicParsing="false" onAction="#exit" prefWidth="158.0" text="Zamknij" />
+      <Label fx:id="info" layoutX="14.0" layoutY="369.0" prefHeight="17.0" prefWidth="164.0" />
+      <Button layoutX="490.0" layoutY="103.0" mnemonicParsing="false" onAction="#departments" prefWidth="158.0" text="Zarządzaj departamentami" />
+      <Button layoutX="490.0" layoutY="136.0" mnemonicParsing="false" onAction="#employees" prefWidth="158.0" text="Zarządzaj pracownikami" />
+      <Button layoutX="490.0" layoutY="202.0" mnemonicParsing="false" onAction="#makeReceipt" prefWidth="158.0" text="Wystaw paragon" />
+      <ImageView fitHeight="338.0" fitWidth="432.0" layoutX="33.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@falcon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

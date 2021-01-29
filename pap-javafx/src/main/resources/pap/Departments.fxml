@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DepartmentsController">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="10.0" layoutY="46.0" prefHeight="288.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="idColumn" editable="false" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameColumn" onEditCommit="#editNameColumn" prefWidth="202.0" text="Nazwa" />
+            <TableColumn fx:id="adressColumn" onEditCommit="#editAdressColumn" prefWidth="202.0" text="Adres" />
+            <TableColumn fx:id="managerColumn" onEditCommit="#editManagerColumn" prefWidth="201.0" text="Menadżer" />
+        </columns>
+      </TableView>
+      <Button layoutX="619.0" layoutY="347.0" mnemonicParsing="false" onAction="#backMenu" text="Wstecz" />
+      <Button layoutX="366.0" layoutY="347.0" mnemonicParsing="false" onAction="#addDept" text="Dodaj filię" />
+      <Button layoutX="517.0" layoutY="347.0" mnemonicParsing="false" onAction="#undo" text="Cofnij" />
+   </children>
+</Pane>
